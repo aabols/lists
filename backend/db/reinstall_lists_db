@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mysql < sql/remove_lists_db.sql
+mysql < sql/setup_lists_db.sql
+mysql --table < sql/show_databases.sql

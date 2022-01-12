@@ -1,0 +1,21 @@
+show databases;
+select
+	`TABLE_SCHEMA`,
+	`TABLE_NAME`,
+	`ORDINAL_POSITION`,
+	`COLUMN_KEY`,
+	`COLUMN_NAME`,
+	`DATA_TYPE`,
+	`IS_NULLABLE`,
+	`COLUMN_DEFAULT`,
+	`CHARACTER_MAXIMUM_LENGTH`,
+	`NUMERIC_PRECISION`,
+	`NUMERIC_SCALE`
+from
+	information_schema.columns
+where
+	`TABLE_SCHEMA` = 'lists'
+order by
+	`TABLE_NAME`,
+	`COLUMN_KEY` desc,
+	`ORDINAL_POSITION`;
