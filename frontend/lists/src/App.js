@@ -1,9 +1,15 @@
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
 
   return (
-    "Hello React App"
+    <div>
+      <nav>
+        <Link to="/lists/invoices">Invoices</Link>
+        <Link to="/lists/expenses">Expenses</Link>
+      </nav>
+    </div>
   );
 }
 
