@@ -1,0 +1,10 @@
+.body {
+    border: 2px solid var(--themeColor1);
+    background-color: var(--themeColor2);
+    color: var(--themeColor1);
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
