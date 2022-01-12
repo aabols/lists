@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm -r /var/www/jaab.dev/lists
+cp -r lists/build /var/www/jaab.dev/lists/
