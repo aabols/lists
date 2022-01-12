@@ -1,0 +1,46 @@
+.NavigationBarLink {
+    text-decoration: none;
+    display: contents;
+    color: var(--themeColor1);
+}
+
+.NavigationBarLink:active {
+    color: var(--themeColor1);
+}
+
+.NavigationBarActiveLink {
+    font-weight: bold;
+}
+
+.NavigationBarTab {
+    padding: 5px;
+}
+
+.NavigationBarMenu {
+    color: var(--themeColor1);
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+}
+
+.NavigationBarMenu>div {
+    background-color: var(--themeColor2);
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border: 2px solid var(--themeColor1);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.NavigationBarMenu>div div {
+    padding: 10px 9px 10px 3px;
+    transition-duration: 300ms;
+}
+.NavigationBarMenu>div div:hover {
+    filter: brightness(1.4);
+    padding: 10px 6px 10px 6px;
+    transition-duration: 300ms;
+}

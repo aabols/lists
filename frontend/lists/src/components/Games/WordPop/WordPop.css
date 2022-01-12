@@ -1,0 +1,111 @@
+.WordPopBody {
+    background-color: #ccc;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes float {
+    0% {
+        top: 100%;
+        transform: translateY(-100%);
+    }
+    100% {
+        top: 0;
+        transform: translateY(0);
+    }
+}
+
+.WordPopBubble {
+    position: absolute;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.WordPopBubbleRising {
+    animation-name: float;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+}
+
+.WordPopPopped {
+    background-color: transparent;
+    animation-play-state: paused;
+}
+
+.WordPopPaused {
+    animation-play-state: paused;
+}
+
+.WordPopPopped .WordPopContent {
+    visibility: hidden;
+}
+
+.WordPopUnpopped .WordPopResult {
+    visibility: hidden;
+}
+
+.WordPopResult {
+    position: relative;
+    margin-top: -1em;
+    background-color: transparent;
+    white-space: nowrap;
+    text-align: center;
+    color: green;
+}
+
+.WordPopGotcha .WordPopResult {
+    color: red;
+}
+
+.WordPopUncaught .WordPopResult {
+    color: red;
+}
+
+.WordPopGotcha.WordPopUncaught .WordPopResult {
+    color: green;
+}
+
+.WordPopContent {
+    display: inline;
+    position: relative;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.WordPopToolbar {
+    background-color: #aaa;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 16px);
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.WordPopScore {
+    white-space: nowrap;
+}
+
+.WordPopMissed {
+    margin-left: 20px;
+    color: rgb(136, 27, 27);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.WordPopMissedWord {
+    margin-right: 5px;
+}
+
+.WordPopLives {
+    color: rgb(192, 86, 86);
+    margin-right: 5px;
+}
