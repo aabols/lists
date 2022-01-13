@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp src/api/*.php /var/www/jaab.dev/api
