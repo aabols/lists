@@ -4,7 +4,7 @@ import Button from './Button';
 import { useAuthUpdate } from '../contexts/AuthContext';
 
 //const registrationEndpoint = "http://www.lanis.co.uk/php/register";
-const registrationEndpoint = "http://65.108.81.255/register";
+const registrationEndpoint = "http://65.108.81.255/api/register";
 const loginEndpoint = "http://65.108.81.255/api/login";
 //const loginEndpoint = "http://www.lanis.co.uk/php/login";
 
