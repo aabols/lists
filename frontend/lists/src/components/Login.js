@@ -3,8 +3,10 @@ import TabStrip from './TabStrip';
 import Button from './Button';
 import { useAuthUpdate } from '../contexts/AuthContext';
 
-const registrationEndpoint = "http://www.lanis.co.uk/php/register";
-const loginEndpoint = "http://www.lanis.co.uk/php/login";
+//const registrationEndpoint = "http://www.lanis.co.uk/php/register";
+const registrationEndpoint = "http://www.jaab.dev/api/register";
+const loginEndpoint = "http://www.jaab.dev/api/login";
+//const loginEndpoint = "http://www.lanis.co.uk/php/login";
 
 function tokenUser(token) {
   let tokenPayload = token.split('.')[1];
