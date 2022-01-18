@@ -4,7 +4,7 @@ const shareEndpoint = "php/share";
 
 export default async function fetchLanisShare(body, dev=false) {
     //const endpoint = dev ? "http://www.lanis.co.uk/" + shareEndpoint : shareEndpoint;
-    const endpoint = "http://65.108.81.255/api/share.php";
+    const endpoint = "https://jaab.dev/api/share.php";
     return await fetch(endpoint, {
         method: "POST",
         headers: {"Content-Type": "application/json"},

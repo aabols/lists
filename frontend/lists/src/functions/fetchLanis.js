@@ -5,7 +5,7 @@ const ormEndpoint = "api/lapi";
 
 export default async function fetchLanis(body, dev=false) {
     //const endpoint = dev ? "http://www.lanis.co.uk/" + ormEndpoint : ormEndpoint;
-    const endpoint = "http://65.108.81.255/api/lapi.php";
+    const endpoint = "https://jaab.dev/api/lapi.php";
     return await fetch(endpoint, {
         method: "POST",
         headers: {"Content-Type": "application/json"},
